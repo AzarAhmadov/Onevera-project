@@ -8,6 +8,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -106,13 +107,20 @@ body {
     color: #454545;
 }
 
+#header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .mobil-icon {
+    color: #000;
+    font-size: 35px;
+    display: none;
+    line-height: 89px;
+}
+
 #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item .search-btn {
     background: transparent;
     border: none;
 }
 
 #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item .search-btn svg {
-   margin-top: -13px;
+    margin-top: -13px;
 }
 
 #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item .buy {
@@ -127,7 +135,82 @@ body {
     text-transform: uppercase;
 }
 
+.mobil-menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 89px;
+    background: #fff;
+    display: none;
+    z-index: 1000;
+}
+
+.mobil-menu .mobil-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobil-menu .mobil-container .logo h5 {
+    color: #FC6459;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+}
+.mobil-bar{
+    position: fixed;
+    top: 0;
+    left: -100%;   
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    z-index: 3000;
+    transition: 400ms all;
+}
+.mobil-bar.active{
+    left: 0;
+}
+.mobil-bar .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.mobil-bar .bar-container .logo span{
+    color:#FC6459;
+    font-size: 35px;
+    text-align: start;
+}
+
+.mobil-bar .bar-container .navbar ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.mobil-bar .bar-container .navbar ul li{
+    margin-bottom: 30px;
+}
+.mobil-bar .bar-container .navbar  form #search{
+    padding: 10px;
+    border: 1px solid #000;
+}
+.mobil-bar .bar-container .navbar ul li a{
+    text-decoration: none;
+    color:#000;
+    font-size: 20px;
+}
+
 #main {
+    overflow-x: hidden;
     background: #F6F6F6;
 }
 
@@ -142,7 +225,6 @@ body {
 
 #main #banner .swiper .swiper-wrapper img {
     position: relative;
-    background-position: right;
 }
 
 #main #banner .swiper .swiper-wrapper .img-text {
@@ -223,7 +305,7 @@ body {
 #main .contact .container .row .ct-col1 {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 #main .contact .container .row .ct-col1 .ct-text {
@@ -263,8 +345,12 @@ body {
     color: #fff;
 }
 
+#main #work {
+    background: #fff;
+}
+
 #main #work .container .work-title {
-    margin-top: 50px;
+    padding-top: 50px;
     font-family: Bergen Sans;
     font-style: normal;
     font-weight: 600;
@@ -279,27 +365,30 @@ body {
     flex-direction: column;
 }
 
-#main #work .container .work-title::before {
-    content: "Process";
+#main #work .container .work-title::after {
+    content: "Prosess";
     position: absolute;
     bottom: -180px;
-    z-index: -1;
-    color: rgba(0, 0, 0, 0.041);
+    color: #00000009;
     font-weight: 600;
     font-size: 250px;
     line-height: 360px;
 }
 
-#main #work .container .work-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 70px;
-    border: 2px solid #FC6459;
-}
-
 #main #work .container .work-title span {
     color: #FC6459;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#main #work .container .work-title span::after {
+    width: 70px;
+    height: 3px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: #FC6459
 }
 
 #main #work .container .row {
@@ -362,7 +451,8 @@ body {
 }
 
 #main #about {
-    margin-top: 100px;
+    background: #fff;
+    padding-top: 100px;
 }
 
 
@@ -420,7 +510,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
+    padding-top: 70px;
     max-height: 50vh;
     height: 50vh;
     background-repeat: no-repeat;
@@ -489,7 +579,8 @@ body {
 }
 
 #main #galary {
-    margin-top: 90px;
+    background: #fff;
+    padding-top: 90px;
 }
 
 
@@ -610,6 +701,10 @@ body {
     line-height: 100.19%;
 }
 
+#main #our .container .row-2 {
+    margin-top: 40px;
+}
+
 #main #our .our-item .our-btn img {
     width: 13px;
     border: 1px solid #FC6459;
@@ -655,7 +750,12 @@ body {
 #main #team .container .tm-row .tm-col .team-item .img {
     position: relative;
     margin-bottom: 60px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main #team .container .tm-row .tm-col .team-item .img img {
+    width: 380px;
 }
 
 #main #team .container .tm-row .tm-col {
@@ -821,6 +921,7 @@ body {
     padding: 50px 0;
     background: #181717;
 }
+
 
 #footer .container .row .ft-col .ft-logo h5 {
     font-style: normal;
@@ -998,4 +1099,236 @@ body {
     background: #FC6459;
     color: #fff;
     border: none;
+}
+
+@media only screen and (max-width:1200px) {
+    #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item {
+        margin-left: 20px;
+    }
+
+    #main #banner .swiper .swiper-wrapper .img-text .banner-title {
+        font-size: 45px;
+        white-space: nowrap;
+    }
+
+    #main #banner .swiper-button-prev .btn-for-swip {
+        width: 55px;
+    }
+
+    #main #banner .swiper-button-next .btn-for-swip {
+        width: 55px;
+    }
+
+    #main .contact .container .row .ct-col1 .ct-text {
+        font-size: 17px;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #header {
+        display: none;
+    }
+
+    .mobil-menu {
+        display: block !important;
+    }
+
+    .mobil-menu .mobil-container {
+        display: flex;
+        padding: 0 50px;
+        height: 89px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobil-menu .mobil-container .open-btn i {
+        font-size: 30px;
+    }
+
+    #main .contact {
+        height: 70px;
+    }
+
+    #main .contact .container .row .ct-col2 .ct-link {
+        line-height: 45px;
+        height: 45px;
+    }
+
+    #main .contact .container .row .ct-col1 .ct-text {
+        font-size: 16px;
+        white-space: normal;
+    }
+
+    #main #work .container .work-title {
+        font-size: 40px;
+    }
+
+    #main #work .container .work-title::after {
+        font-size: 200px;
+    }
+
+    #main #services {
+        padding: 0;
+        height: 70vh;
+        max-height: 70vh;
+    }
+
+    #main #services .container .row .services-col {
+        margin-bottom: 15px;
+    }
+
+    #main #galary .container-fluid .row .gy-col {
+        margin-bottom: 25px;
+    }
+
+    #main #our .container .row .our-col-text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main #our .container .row .our-col .our-link {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #main #our .container .our-row .our-col .out-title {
+        font-size: 40px;
+    }
+
+    #main #our .container .our-row .our-col p {
+        font-size: 25px;
+    }
+
+    #main #our .container .row .our-col {
+        margin-bottom: 25px;
+    }
+
+    #main #our .container .row-2 {
+        margin: 0;
+    }
+
+    #about .container .about-title {
+        font-size: 45px !important;
+    }
+
+    #about .container .row .col-12 .work-item .about-des {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    #footer .container .row .col-md-12 {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #footer .container .row .ft-col-4 .news form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #main #banner .swiper .swiper-wrapper .img-text .banner-title {
+        font-size: 35px;
+    }
+
+    #main #banner .swiper .swiper-wrapper .img-text .banner-dec {
+        font-size: 16px;
+    }
+
+    #main #work .container .row .work-col {
+        margin-bottom: 60px;
+    }
+
+    #main #work .container .work-title::after {
+        font-size: 130px;
+    }
+
+    #main #services {
+        height: 100vh;
+        padding: 20px 0;
+        max-height: 100vh;
+    }
+
+    #main #team .tm-container .team-title {
+        font-size: 34px;
+    }
+
+    #main #slide .slide-title {
+        font-size: 34px;
+        z-index: 11;
+    }
+
+    #main #banner .swiper-button-prev .btn-for-swip {
+        width: 35px;
+    }
+
+    #main #banner .swiper-button-next .btn-for-swip {
+        width: 35px;
+    }
+
+    #main #team .container .tm-row .tm-col .team-item .img img {
+        width: 330px;
+    }
+
+    #main #slide .swiper-container .slider-card {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #main #work .container .work-title {
+        font-size: 32px;
+    }
+
+    #main #work .container .work-title::after {
+        font-size: 110px;
+    }
+
+    #main #banner .swiper .swiper-wrapper .img-text .banner-title {
+        font-size: 23px;
+    }
+
+    #main #banner .swiper .swiper-wrapper .img-text .banner-dec {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #main #banner .swiper .swiper-wrapper .img-text .btn-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    #main #banner .swiper .swiper-wrapper .img-text .btn-flex .btn1 {
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        height: 200px;
+    }
+
+    .contact .container .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .container .row .ct-col1 .ct-text {
+        font-size: 13px !important;
+        line-height: 1.3 !important;
+    }
+
+    #main #services {
+        height: 130vh;
+        padding: 20px 0;
+        max-height: 130vh;
+    }
 }

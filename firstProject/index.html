@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/stil/style.css">
     <link rel="stylesheet" href="assets/stil/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -72,10 +74,10 @@
         <div class="bottom-header">
             <div class="container bt-container g-0">
                 <div class="row bt-row">
-                    <div class="col-4  bt-col1 ">
+                    <div class="col-6  bt-col1 ">
                         <a href="#" class="logo"> Onevera </a>
                     </div>
-                    <div class="col-8 bt-col2">
+                    <div class="col-6 bt-col2">
                         <nav id="navbar">
                             <ul class="nav-list">
                                 <li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
@@ -98,6 +100,39 @@
     </header>
 
 
+    <div class="mobil-menu">
+     <div class="mobil-container">
+         <div class="logo">
+             <h5> Onevera </h5>
+         </div>
+         <div class="open-btn">
+            <i class='bx bx-menu-alt-right openBtn'></i>
+         </div>
+     </div>
+    </div>
+
+    <div class="mobil-bar">
+        <div class="bar-container">
+            <div class="logo">
+                <span>Onevera</span>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> Services </a></li>
+                    <li><a href="#"> About us </a></li>
+                    <li><a href="#"> Contact </a></li>
+                    <li>
+                        <form action="#">
+                            <input type="search" placeholder="search..." id="search" >
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <i class='bx bx-x closeBtn' ></i>
+    </div>
+
     <main id="main">
 
         <section id="banner">
@@ -110,8 +145,7 @@
                                 THE BEST TECHNOLOGY COMPANY
                             </h1>
                             <p class="banner-dec">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit <br> amet
-                                luctus venenatis
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                             </p>
                             <div class="btn-flex">
                                 <a class="btn1" href="#"> get information </a>
@@ -153,10 +187,10 @@
                     </div>
                 </div>
                 <div class="swiper-button-next">
-                  <img src="./assets/img/ox butonu.png" alt="">
+                  <img class="btn-for-swip" src="./assets/img/ox butonu.png" alt="">
                 </div>
                 <div class="swiper-button-prev">
-                    <img src="./assets/img/ox butonu 1(1).svg" alt="">
+                    <img  class="btn-for-swip" src="./assets/img/ox butonu 1(1).svg" alt="">
                 </div>
             </div>
         </section>
@@ -180,7 +214,7 @@
                     Why you should work <br> <span>with us</span>
                 </h2>
                 <div class="row">
-                    <div class="col-lg-4 work-col">
+                    <div class="col-lg-4 col-md-4 work-col">
                         <div class="work-item">
                             <img class="headerImg" src="./assets/img/CRM512 1.png" alt="">
                             <p class="work-header">
@@ -197,7 +231,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 work-col">
+                    <div class="col-lg-4 col-md-4 work-col">
                         <div class="work-item">
                             <img class="headerImg" src="./assets/img/Colleagues512 1.png" alt="">
                             <p class="work-header">
@@ -215,7 +249,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 work-col">
+                    <div class="col-lg-4 col-md-4 work-col">
                         <div class="work-item">
                            <img class="headerImg" src="./assets/img/Work Flow512 1.png" alt="">
                             <p class="work-header">
@@ -259,7 +293,7 @@
         <section id="services">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 services-col">
+                    <div class="col-lg-3 col-sm-6 col-md-6 services-col">
                         <div class="services-item">
                             <div class="img">
                                 <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -276,7 +310,7 @@
                             <span class="content"> Happy Cliets </span>
                         </div>
                     </div>
-                    <div class="col-lg-3 services-col">
+                    <div class="col-lg-3  col-md-6 col-sm-6 services-col">
                         <div class="services-item">
                             <div class="img">
                                <img src="./assets/img/business-planning-strategy 2.png" alt="">
@@ -286,7 +320,7 @@
                             <span class="content"> projekt </span>
                         </div>
                     </div>
-                    <div class="col-lg-3 services-col">
+                    <div class="col-lg-3 col-sm-6 col-md-6 services-col">
                         <div class="services-item">
                             <div class="img">
                                 <img src="./assets/img/meeting-interview-teamwork 2.png" alt="">
@@ -295,7 +329,7 @@
                             <span class="content"> Service </span>
                         </div>
                     </div>
-                    <div class="col-lg-3 services-col">
+                    <div class="col-lg-3 col-sm-6 col-md-6 services-col">
                         <div class="services-item">
                             <div class="img">
                                 <img src="./assets/img/idea-brain 2.png" alt="">
@@ -330,13 +364,13 @@
 
         <section id="our">
             <div class="container our-container">
-                <div class=" row our-row">
-                    <div class="col-lg-6 our-col">
+                <div class=" row our-row g-0">
+                    <div class="col-lg-6 col-md-12 our-col our-col-text">
                         <h5 class="out-title">Our Services</h5>
                         <p class="our-dec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus </p>
                         <a href="#" class="our-link"> all services </a>
                     </div>
-                    <div class="col-lg-3 our  our-col our-col2">
+                    <div class="col-lg-3 col-md-6 our  our-col our-col2">
                         <div class="our-item">
                             <img class="icon" src="./assets/img/Manager512 1.png" alt="">
                             <span class="our-text">
@@ -350,7 +384,7 @@
                             </a>
                         </div>
                     </div>
-                       <div class="col-lg-3 our our-col3">
+                       <div class="col-lg-3 col-md-6 our-col our-col3">
                         <div class="our-item">
                             <img class="icon" src="./assets/img/Analysis thinking512 1.png" alt="">
                             <span class="our-text">
@@ -365,8 +399,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-2 mt-5">
-                    <div class="col-lg-3 col-md-3 our our-col3">
+                <div class="row row-2">
+                    <div class="col-lg-3 col-md-6 col-md-3 our-col our-col3">
                         <div class="our-item">
                             <img class="icon" src="./assets/img/Process512 1.png" alt="">
                             <span class="our-text">
@@ -380,7 +414,7 @@
                             </a>
                         </div>
                     </div>
-                        <div class="col-lg-3 col-md-3 our our-col3">
+                        <div class="col-lg-3 col-md-6 col-md-3 our-col our-col3">
                     <div class="our-item">
                         <img class="icon" src="./assets/img/Programming512 1.png" alt="">
                         <span class="our-text">
@@ -394,7 +428,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 our our-col3">
+                <div class="col-lg-3 col-md-3 col-md-6 our-col our-col3">
                     <div class="our-item">
                         <img class="icon" src="./assets/img/Creativity512 1.png" alt="">
                         <span class="our-text">
@@ -408,7 +442,7 @@
                         </a>
                     </div>
                 </div>
-                    <div class="col-lg-3 our our-col3">
+                    <div class="col-lg-3 col-md-6 our-col our-col3">
                     <div class="our-item">
                         <img class="icon" src="./assets/img/Analysis thinking512 1.png" alt="">
                         <span class="our-text">
@@ -476,7 +510,7 @@
                <a href="#" class="tm-link"> See More </a>
             </div>
         </section>
- 
+
         <section id="slide">
           <h3 class="slide-title">
             What our <span> customers </span> <br> say about us
@@ -553,13 +587,13 @@
         <img src="./assets/img/Ellipse 31.svg" class="abs-2" alt="">
         <img src="./assets/img/Ellipse 29.svg" alt="" class="abs-3">
         <img src="./assets/img/Ellipse 30.svg" class="abs-4" alt="">
-        </section>
+        </section> 
     </main>
 
     <footer id="footer">
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-3 col-md-6 ft-col">
+            <div class="row g-0 ">
+                <div class="col-lg-3 col-md-12 ft-col align-self-start">
                     <div class="ft-logo">
                         <h5>
                              Onevera 
@@ -578,7 +612,7 @@
                             </ul>
                         </div>
                 </div>
-                <div class="col-lg-3  col-md-6 ft-col-2">
+                <div class="col-lg-3 ft-col  col-md-12 ft-col-2">
                     <div class="links">
                         <h5 class="quick">Quick links </h5>
                         <ul  class="list-unstyled">
@@ -591,7 +625,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3  col-md-6 ft-col-3">
+                <div class="col-lg-3 ft-col  col-md-12 ft-col-3">
                     <div class="contact">
                         <h5 class="contact-title"> Contact Us </h5>
                         <ul class="list-unstyled">
@@ -601,7 +635,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3  col-md-6 ft-col-4">
+                <div class="col-lg-3  ft-col col-md-12 ft-col-4">
                     <div class="news">
                          <h5 class="news-title"> Newletter </h5>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>

@@ -111,8 +111,8 @@ body {
     border: none;
 }
 
-#header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item .search-btn img {
-    margin-top: -13px;
+#header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item .search-btn svg {
+   margin-top: -13px;
 }
 
 #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item .buy {
@@ -295,7 +295,7 @@ body {
     position: absolute;
     bottom: 0px;
     width: 70px;
-    border: 3.36403px solid #FC6459;
+    border: 2px solid #FC6459;
 }
 
 #main #work .container .work-title span {
@@ -364,6 +364,7 @@ body {
 #main #about {
     margin-top: 100px;
 }
+
 
 #main #about .container .about-title {
     font-style: normal;
@@ -451,7 +452,7 @@ body {
     display: none;
 }
 
-#main #services .container .row .services-col .services-item .img img {
+#main #services .container .row .services-col .services-item .img svg {
     width: 63px;
     height: 63px;
 }

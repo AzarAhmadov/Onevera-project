@@ -1101,6 +1101,93 @@ body {
     border: none;
 }
 
+main{
+    background: #F6F6F6;
+}
+
+main #blog{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)),url('../img/image\ 15.png');
+}
+
+main #blog .container{
+    display: flex;
+    height: 55vh;
+    max-height: 55vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:#fff;
+}
+
+main #blog .container .row .col-12 .blog-text h4{
+    font-weight: bold;
+    font-size: 50px;
+}
+main #card {
+    margin-top: 100px;
+}
+
+main #card .container .row .col-lg-4 .card-area{
+    background-color:#fff;
+    margin: 0px 10px;
+    width: 400px;
+    height: 520px;
+}
+
+main #card .container .row .col-lg-4 .card-area .card-content{
+    padding: 40px 10px;
+}
+main #card .container .row .col-lg-4 .card-area .card-img{
+    position: relative;
+}
+
+main #card .container .row .col-lg-4 {
+    margin-bottom: 25px;
+}
+main #card .container .row .col-lg-4 .card-area .card-img::after{
+    content:"25 Mar";
+position: absolute;
+bottom: -23px;
+left: 50%;
+transform: translateX(-50%);
+background: #FC6459;
+color:#fff;
+padding: 10px 15px;
+z-index: 10;
+}
+
+main #card .container .row .col-lg-4 .card-area .card-content p{
+    font-weight: bold;
+}
+main #card .container .row .col-lg-4 .card-area .card-content span{
+    color:#74787C;
+   line-height: 28px;
+}
+
+
+main #card .container .row .col-lg-4 .card-area .admin-flex{
+    padding-left: 10px;
+}
+
+main #card .container .row .col-lg-4 .card-area .admin-flex img{
+    margin-right: 5px;
+}
+
+
+main #card .container .row .col-lg-4 .card-area .admin-flex span{
+    margin-right: 20px;
+}
+main #card .container .number-area a{
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 15px 20px;
+    background: #fff;
+    color:#000;
+    display: block;
+    margin:60px 0;
+    margin-right: 13px;
+}
 @media only screen and (max-width:1200px) {
     #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item {
         margin-left: 20px;
@@ -1126,6 +1213,9 @@ body {
 }
 
 @media only screen and (max-width:991px) {
+    main #blog{
+      margin-top: 89px;
+    }
     #header {
         display: none;
     }

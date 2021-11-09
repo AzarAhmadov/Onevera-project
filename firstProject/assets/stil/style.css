@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    -webkit-user-drag: none;
 }
 
 body {
@@ -159,10 +160,11 @@ body {
     font-style: normal;
     font-size: 30px;
 }
-.mobil-bar{
+
+.mobil-bar {
     position: fixed;
     top: 0;
-    left: -100%;   
+    left: -100%;
     padding-top: 50px;
     padding-left: 30px;
     width: 70%;
@@ -171,18 +173,21 @@ body {
     z-index: 3000;
     transition: 400ms all;
 }
-.mobil-bar.active{
+
+.mobil-bar.active {
     left: 0;
 }
-.mobil-bar .closeBtn{
+
+.mobil-bar .closeBtn {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 40px;
     cursor: pointer;
 }
-.mobil-bar .bar-container .logo span{
-    color:#FC6459;
+
+.mobil-bar .bar-container .logo span {
+    color: #FC6459;
     font-size: 35px;
     text-align: start;
 }
@@ -196,16 +201,18 @@ body {
     margin-top: 10px;
 }
 
-.mobil-bar .bar-container .navbar ul li{
+.mobil-bar .bar-container .navbar ul li {
     margin-bottom: 30px;
 }
-.mobil-bar .bar-container .navbar  form #search{
+
+.mobil-bar .bar-container .navbar form #search {
     padding: 10px;
     border: 1px solid #000;
 }
-.mobil-bar .bar-container .navbar ul li a{
+
+.mobil-bar .bar-container .navbar ul li a {
     text-decoration: none;
-    color:#000;
+    color: #000;
     font-size: 20px;
 }
 
@@ -860,10 +867,9 @@ body {
 #main .circle {
     width: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     height: 2px;
     background: #FC6459;
-    margin: 0 auto;
     margin-bottom: 100px;
 }
 
@@ -1101,100 +1107,108 @@ body {
     border: none;
 }
 
-main{
+main {
     background: #F6F6F6;
 }
 
-main #blog{
+main #blog {
     background-repeat: no-repeat !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)),url('../img/image\ 15.png');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 15.png');
 }
 
-main #blog .container{
+main #blog .container {
     display: flex;
     height: 55vh;
     text-align: center;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color:#fff;
+    color: #fff;
 }
 
-main #blog .container .row .col-12 .blog-text h4{
+main #blog .container .row .col-12 .blog-text h4 {
     font-weight: bold;
     font-size: 50px;
 }
+
 main #card {
     margin-top: 100px;
 }
 
-main #card .container .row .col-lg-4 .card-area{
-    background-color:#fff;
+main #card .container .row .col-lg-4 .card-area {
+    background-color: #fff;
     margin: 0px 10px;
     width: 400px;
     height: 520px;
 }
 
-main #card .container .row .col-lg-4 .card-area .card-content{
+main #card .container .row .col-lg-4 .card-area .card-content {
     padding: 40px 10px;
 }
-main #card .container .row .col-lg-4 .card-area .card-img{
+
+main #card .container .row .col-lg-4 .card-area .card-img {
     position: relative;
 }
 
 main #card .container .row .col-lg-4 {
     margin-bottom: 25px;
 }
-main #card .container .row .col-lg-4 .card-area .card-img::after{
-    content:"25 Mar";
-position: absolute;
-bottom: -23px;
-left: 50%;
-transform: translateX(-50%);
-background: #FC6459;
-color:#fff;
-padding: 10px 15px;
-z-index: 10;
+
+main #card .container .row .col-lg-4 .card-area .card-img::after {
+    content: "25 Mar";
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FC6459;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 10;
 }
 
-main #card .container .row .col-lg-4 .card-area .card-content p{
+main #card .container .row .col-lg-4 .card-area .card-content p {
     font-weight: bold;
 }
-main #card .container .row .col-lg-4 .card-area .card-content span{
-    color:#74787C;
-   line-height: 28px;
+
+main #card .container .row .col-lg-4 .card-area .card-content span {
+    color: #74787C;
+    line-height: 28px;
 }
 
 
-main #card .container .row .col-lg-4 .card-area .admin-flex{
+main #card .container .row .col-lg-4 .card-area .admin-flex {
     padding-left: 10px;
 }
 
-main #card .container .row .col-lg-4 .card-area .admin-flex img{
+main #card .container .row .col-lg-4 .card-area .admin-flex img {
     margin-right: 5px;
 }
 
 
-main #card .container .row .col-lg-4 .card-area .admin-flex span{
+main #card .container .row .col-lg-4 .card-area .admin-flex span {
     margin-right: 20px;
 }
-main #card .container .number-area a{
+
+main #card .container .number-area a {
     text-decoration: none;
     margin-right: 20px;
     padding: 15px 20px;
     background: #fff;
-    color:#000;
+    color: #000;
     display: block;
-    margin:60px 0;
+    margin: 60px 0;
     margin-right: 13px;
 }
-main #our-services{
+
+main #our-services {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 3.png');
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 3.png');
 }
-main #our-services .container{
+
+main #our-services .container {
     display: flex;
     height: 55vh;
     max-height: 55vh;
@@ -1202,14 +1216,15 @@ main #our-services .container{
     justify-content: center;
     align-items: center;
     width: 100%;
-    color:#fff;
-} 
+    color: #fff;
+}
 
-main #our-services .container .row .col-12 h5{
+main #our-services .container .row .col-12 h5 {
     font-weight: bold;
     font-size: 40px;
 }
-main #best-services .container h2{
+
+main #best-services .container h2 {
     font-weight: bold;
     font-size: 50px;
     position: relative;
@@ -1218,22 +1233,26 @@ main #best-services .container h2{
     padding-bottom: 20px;
     margin-bottom: 90px;
 }
-main #best-services .container h2::before{
+
+main #best-services .container h2::before {
     width: 100px;
     height: 3px;
-    content:"";
+    content: "";
     position: absolute;
     bottom: 0;
     background: #FC6459;
 }
-main #best-services{
+
+main #best-services {
     margin-top: 90px;
 }
+
 main #best-services .container .row .col-lg-4 {
     display: flex;
     justify-content: center;
 }
-main #best-services .container .row .col-lg-4 .services-area{
+
+main #best-services .container .row .col-lg-4 .services-area {
     max-width: 330px;
     width: 330px;
     height: 400px;
@@ -1247,25 +1266,26 @@ main #best-services .container .row .col-lg-4 .services-area{
     margin-bottom: 30px;
 }
 
-main #best-services .container .row .col-lg-4 .services-area span{
+main #best-services .container .row .col-lg-4 .services-area span {
     font-weight: bold;
     font-size: 20px;
     margin: 20px 0;
 }
 
-main #best-services .container .row .col-lg-4 .services-area p{
+main #best-services .container .row .col-lg-4 .services-area p {
     font-size: 17px;
     line-height: 25px;
-    color:#656565;
-}
-main #best-services .container .row .col-lg-4 .services-area .bes-btn{
-    text-decoration: none;
-    text-transform: uppercase;
-    color:#FC6459;
-    font-weight:bold ;
+    color: #656565;
 }
 
-main #idea{
+main #best-services .container .row .col-lg-4 .services-area .bes-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FC6459;
+    font-weight: bold;
+}
+
+main #idea {
     overflow: hidden;
     position: relative;
     margin-top: 70px;
@@ -1275,14 +1295,14 @@ main #idea{
     background-position: center center;
 }
 
-main #idea .abs1{
+main #idea .abs1 {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
 
-main #idea .abs2{
+main #idea .abs2 {
     position: absolute;
     bottom: 0;
     left: 100px;
@@ -1290,21 +1310,23 @@ main #idea .abs2{
 
 }
 
-main #idea .abs3{
+main #idea .abs3 {
     position: absolute;
     top: 0;
     right: 100px;
     z-index: -1;
 
 }
-main #idea .abs4{
-position: absolute;
-top: -2px;
-left: 0;
-z-index: -1;
+
+main #idea .abs4 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: -1;
 
 }
-main #idea .container{
+
+main #idea .container {
     overflow: hidden;
     display: flex;
     height: 50vh;
@@ -1313,32 +1335,32 @@ main #idea .container{
     justify-content: center;
     align-items: center;
     width: 100%;
-    color:#fff;
+    color: #fff;
 }
 
-main #idea .container .row .col-12 span{
-  font-weight: bold;
-  font-size: 50px;
+main #idea .container .row .col-12 span {
+    font-weight: bold;
+    font-size: 50px;
 }
 
-main #idea .container .row a{
+main #idea .container .row a {
     height: 60px;
-width: 242px;
-background: #fff;
-color:#FC6459;
-display: block;
-text-decoration: none;
-text-transform: uppercase;
-margin-top: 25px;
-line-height: 60px;
+    width: 242px;
+    background: #fff;
+    color: #FC6459;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 25px;
+    line-height: 60px;
 }
 
-main #partner{
+main #partner {
     background: #fff;
     padding-top: 100px;
 }
 
-main #partner .container .partner-title{
+main #partner .container .partner-title {
     font-size: 45px;
     font-weight: bold;
     position: relative;
@@ -1347,39 +1369,326 @@ main #partner .container .partner-title{
     padding-bottom: 20px;
 }
 
-main #partner .container .partner-title::after{
+main #partner .container .partner-title::after {
     width: 100px;
     height: 3px;
-    content:"";
+    content: "";
     position: absolute;
     bottom: 0;
     background: #FC6459;
 }
-main #partner .container .col-lg-3{
+
+main #partner .container .col-lg-3 {
     display: flex;
     justify-content: center;
 }
-main #partner .container  p{
-    margin-top:35px;
+
+main #partner .container p {
+    margin-top: 35px;
     font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 160%;
-color: #656565;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #656565;
 }
 
-main #partner .container .row{
+main #partner .container .row {
     margin: 30px 0;
 }
+
+main #about2 {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 12.png');
+    z-index: 10;
+    background-size: cover;
+    background-position: center center;
+}
+
+main #about2 .container {
+    display: flex;
+    height: 55vh;
+    max-height: 55vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+
+main #about2 .container .row .col-12 span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+main #company {
+    padding-top: 100px;
+    background: #fff;
+}
+
+main #company .container .row .col-lg-6 .cy-item h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 110%;
+    color: #000000;
+}
+
+main #company .container .row .col-lg-6 .cy-item .circle {
+    width: 100px;
+    height: 3px;
+    background: #FC6459;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+main #company .container .row .col-lg-6 .cy-item p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 152.18%;
+    width: 535px;
+    color: #000000;
+}
+
+
+main #company .container .row .col-lg-6 .cy-item a {
+    background: #FC6459;
+    width: 177px;
+    height: 48px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+main #company .container .row .col-lg-6 .cy-item .icon {
+    display: flex;
+    flex-direction: column;
+}
+
+main #company .container .row .col-lg-6 {
+    position: relative;
+    z-index: 1000000;
+}
+main #company .container .row .col-lg-6 .cy-item .icon .icon-flex {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+main #company .container .row .col-lg-6 .cy-item .icon .icon-flex img {
+    margin-right: 10px;
+}
+
+main #company .container .row .col-lg-6 .cy-item .icon .icon-flex .abs {
+    position: absolute;
+    left: 4px;
+}
+
+main #company .container .row .col-lg-6 .img-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main #company .container .row .col-lg-6 .ellip{
+    width: 110px;
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    z-index: -10;
+}
+
+main #company .container .row .col-lg-6 .img-item {
+    background-image: url('../img/image\ 13.png');
+    background-size:461px 455px;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    z-index:121212121;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+main #company .container .row .col-lg-6 .img-item .img-absolute {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-weight: normal;
+
+}
+
+main #company .container .row .col-lg-6 .img-item .img-absolute img {
+    color: #fff;
+    padding: 15px 10px;
+    margin-right: 10px;
+    background: #FC6459;
+}
+
+main #team2{
+     background: #fff;
+     padding-top: 150px;
+}
+
+main #team2 .container{
+    position: relative;
+}
+main #team2 .team-title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+main #team2 .team-title::after{
+    width: 100px;
+    height: 3px;
+    background:#FC6459;
+    content:"";
+    position: absolute;
+    bottom:0;
+}
+
+main #team2 .team-content{
+    margin-top: 40px;
+}
+
+main #team2 .container .swiperContainer{
+    margin-top: 50px;
+    max-height: 75vh;
+    position: relative;
+}
+
+main #team2 .container::after{
+    background-image: url('../img/_......\ ......\ .......png');
+    content:"";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide img{
+    width: 368px;
+    height: 470px;
+
+}
+
+main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide span{
+    color:#FC6459;
+}
+main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide {
+    margin-right: 90px;
+}
+main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide h6{
+    font-weight: bold;
+    font-size: 20px;
+padding-bottom: 50px;
+}
+main #reklam{
+    padding-bottom: 70px;
+}
+main .services{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    max-height: 50vh;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 11.png');
+    position: relative;
+}
+
+main .services .container .row .services-col .services-item .img svg {
+    width: 63px;
+    height: 63px;
+}
+
+#main .services .container .row .services-col .services-item .img {
+    background-image: url('../img/Ellipse\ 51.svg');
+    width: 126px;
+    height: 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .services .container .row .services-col .services-item .number {
+    font-style: normal;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 90%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+main .services .container .row .services-col .services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .services .container .row .services-col .services-item .content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 113.5%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+main #last{
+    background: #fff;
+    padding: 100px 0;
+}
+
+main #last .container .row .col-12 h5{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+main #last .container .row .col-12 .last-btn{
+    background: #FC6459;
+    width: 177px;
+height: 48px;
+color:#fff;
+text-transform: uppercase;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 @media only screen and (max-width:1024px) {
     #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item {
         margin-left: 20px;
     }
-    main #our-services .container{
+
+    main #our-services .container {
         height: 38vh;
-    } 
-    main #blog .container{
+    }
+
+    main #blog .container {
         height: 38vh;
     }
 
@@ -1403,12 +1712,14 @@ main #partner .container .row{
 }
 
 @media only screen and (max-width:991px) {
-    main #our-services{
+    main #our-services {
         margin-top: 89px;
     }
-    main #blog{
-      margin-top: 89px;
+
+    main #blog {
+        margin-top: 89px;
     }
+
     #header {
         display: none;
     }
@@ -1458,6 +1769,17 @@ main #partner .container .row{
     }
 
     #main #services .container .row .services-col {
+        margin-bottom: 15px;
+    }
+
+    
+    main .services {
+        padding: 0;
+        height: 70vh;
+        max-height: 70vh;
+    }
+
+    main .services .container .row .services-col {
         margin-bottom: 15px;
     }
 
@@ -1539,6 +1861,12 @@ main #partner .container .row{
         max-height: 100vh;
     }
 
+    main .services {
+        height: 100vh;
+        padding: 20px 0;
+        max-height: 100vh;
+    }
+
     #main #team .tm-container .team-title {
         font-size: 34px;
     }
@@ -1566,22 +1894,27 @@ main #partner .container .row{
 }
 
 @media only screen and (max-width:600px) {
-     main #our-services .container{
-        height: 50vh;
-    } 
-    main #blog .container{
+    main #our-services .container {
         height: 50vh;
     }
-    main #best-services .container h2{
+
+    main #blog .container {
+        height: 50vh;
+    }
+
+    main #best-services .container h2 {
         font-size: 35px;
     }
-    main #partner .container .partner-title{
+
+    main #partner .container .partner-title {
         font-size: 35px;
     }
-    main #idea .container .row .col-12 span{
+
+    main #idea .container .row .col-12 span {
         font-weight: bold;
         font-size: 35px;
-      }
+    }
+
     #main #work .container .work-title {
         font-size: 32px;
     }
@@ -1626,6 +1959,12 @@ main #partner .container .row{
     }
 
     #main #services {
+        height: 130vh;
+        padding: 20px 0;
+        max-height: 130vh;
+    }
+
+    main .services {
         height: 130vh;
         padding: 20px 0;
         max-height: 130vh;

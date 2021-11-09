@@ -1189,7 +1189,8 @@ main #card .container .number-area a{
     margin-right: 13px;
 }
 main #our-services{
-    
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat !important;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 3.png');
 }
@@ -1270,29 +1271,38 @@ main #idea{
     margin-top: 70px;
     background: url('../img/image\ 4.png');
     z-index: 10;
+    background-size: cover;
+    background-position: center center;
 }
 
 main #idea .abs1{
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -1;
 }
 
 main #idea .abs2{
     position: absolute;
     bottom: 0;
     left: 100px;
+    z-index: -1;
+
 }
 
 main #idea .abs3{
     position: absolute;
     top: 0;
     right: 100px;
+    z-index: -1;
+
 }
 main #idea .abs4{
 position: absolute;
 top: -2px;
 left: 0;
+z-index: -1;
+
 }
 main #idea .container{
     overflow: hidden;

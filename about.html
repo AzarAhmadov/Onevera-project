@@ -179,7 +179,7 @@
         <section id="company">
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-lg-6 col-md-6 d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                         <div class="cy-item">
                             <h4>We are the best <br> technology company</h4>
                             <span class="circle"></span>
@@ -203,7 +203,7 @@
                             <a href="#"> read more </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 d-flex justify-content-start">
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
                         <div class="img-item">
                             <div class="img-absolute">
                                 <img src="./firstProject/assets/img/Vector 9.png" alt="">
@@ -237,34 +237,34 @@
             <div class="container">
                 <div class="swiper mySwiper swiperContainer">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide text-center">
+                        <div class="swiper-slide text-center d-flex flex-column align-items-center">
                             <img class="img-fluid"
                                 src="./firstProject/assets/img/portrait-of-attractive-man-forty-years-with-beard--Y3UCZRU 1.png"
                                 alt="">
                             <span>lorem</span>
                             <h6> Jhony Cena </h6>
                         </div>
-                        <div class="swiper-slide text-center">
+                        <div class="swiper-slide text-center d-flex flex-column align-items-center">
                             <img class="img-fluid"
                                 src="./firstProject/assets/img/portrait-of-attractive-man-forty-years-with-beard--Y3UCZRU 1.png"
                                 alt="">
                             <span>lorem</span>
                             <h6> Jhony Cena </h6>
                         </div>
-                        <div class="swiper-slide  text-center">
+                        <div class="swiper-slide  text-center lex flex-column align-items-center">
                             <img class="img-fluid"
                                 src="./firstProject/assets/img/man-sitting-on-the-table-with-notepad-and-pencil-PYSGQCE 1.png"
                                 alt="">
                             <span>lorem</span>
                             <h6> Jhony Cena </h6>
                         </div>
-                        <div class="swiper-slide  text-center">
+                        <div class="swiper-slide  text-center lex flex-column align-items-center">
                             <img class="img-fluid"
                                 src="./firstProject/assets/img/meeting-new-participants-QMWBL3K 1.png" alt="">
                             <span>lorem</span>
                             <h6> Jhony Cena </h6>
                         </div>
-                        <div class="swiper-slide  text-center">
+                        <div class="swiper-slide  text-center d-flex flex-column align-items-center">
                             <img class="img-fluid"
                                 src="./firstProject/assets/img/meeting-new-participants-QMWBL3K 1.png" alt="">
                             <span>lorem</span>
@@ -364,6 +364,8 @@
             </div>
         </section>
     </main>
+
+
     <footer id="footer">
         <div class="container">
             <div class="row g-0 ">
@@ -439,6 +441,23 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+  // when window width is >= 320px
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 20
+  },
+  // when window width is >= 480px
+  580: {
+    slidesPerView: 2,
+    spaceBetween: 30
+  },
+  // when window width is >= 640px
+  640: {
+    slidesPerView: 3,
+    spaceBetween: 40
+  },
+}
         });
     </script>
 </body>

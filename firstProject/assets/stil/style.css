@@ -1521,9 +1521,8 @@ main #company .container .row .col-lg-6 .img-item {
 main #company .container .row .col-lg-6 .img-item .img-absolute {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
-    margin-right: 40px;
     font-weight: normal;
+    margin-right: -45px;
 
 }
 
@@ -1591,11 +1590,11 @@ main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide span{
 }
 main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide {
     margin-right: 90px;
+    padding-bottom: 50px;
 }
 main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide h6{
     font-weight: bold;
     font-size: 20px;
-padding-bottom: 50px;
 }
 main #reklam{
     padding-bottom: 70px;
@@ -1680,9 +1679,26 @@ align-items: center;
 
 
 @media only screen and (max-width:1024px) {
+    main #team2 .container .swiperContainer .swiper-wrapper .swiper-slide{
+        padding-bottom: 40px;
+    }
     #header .bottom-header .bt-container .bt-row .bt-col2 #navbar .nav-list .nav-item {
         margin-left: 20px;
     }
+     
+    main #company .container .row .col-lg-6 .img-item .img-absolute {
+        margin-right: 0;
+    }
+    main #company .container .row .col-lg-6 .cy-item p{
+        width: 350px;
+        font-size: 16px;
+    }
+    main #company .container .row .col-lg-6 .cy-item h4 {
+        font-size: 35px;
+    }
+main #company .container .row .col-lg-6 .img-item{
+    background-size: 350px 455px;
+}
 
     main #our-services .container {
         height: 38vh;
@@ -1712,6 +1728,9 @@ align-items: center;
 }
 
 @media only screen and (max-width:991px) {
+    main #about2{
+       margin-top: 89px;
+    }
     main #our-services {
         margin-top: 89px;
     }
@@ -1839,6 +1858,39 @@ align-items: center;
 }
 
 @media only screen and (max-width:768px) {
+    main #team2 .team-content{
+        font-size: 16px;
+    }
+    main #team2 .team-title{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    main #company .container .row .col-lg-6 .cy-item a {
+        margin-bottom: 90px;
+    }
+    main #company .container .row .col-lg-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main #company .container{
+        display: flex;
+        justify-content: center;
+    }
+    main #company .container .row .col-lg-6 .img-item{
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    main #company .container .row .col-lg-6 .img-item .img-absolute {
+        margin: 0 auto;
+        margin-top: -130px;
+    }
+    main #company .container .row .col-lg-6 .img-item {
+        background-size: cover;
+    }
     #main #banner .swiper .swiper-wrapper .img-text .banner-title {
         font-size: 35px;
     }
@@ -1894,6 +1946,12 @@ align-items: center;
 }
 
 @media only screen and (max-width:600px) {
+    main #last .container .row .col-12 h5{
+        font-size: 23px;
+    }
+    main #about2 .container{
+        height: 50vh;
+    }
     main #our-services .container {
         height: 50vh;
     }

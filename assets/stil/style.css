@@ -1114,11 +1114,12 @@ main {
 main #blog {
     background-repeat: no-repeat !important;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.456), rgba(0, 0, 0, 0.456)), url('../img/image\ 15.png');
+    background-size: cover;
 }
 
 main #blog .container {
     display: flex;
-    height: 55vh;
+    height: 50vh;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -1876,7 +1877,8 @@ main #company .container .row .col-lg-6 .img-item{
     }
 
     main #blog .container {
-        height: 38vh;
+        height: 50vh;
+        background-position:top;
     }
 
     #main #banner .swiper .swiper-wrapper .img-text .banner-title {
@@ -2120,6 +2122,7 @@ main #company .container .row .col-lg-6 .img-item{
 }
 
 @media only screen and (max-width:600px) {
+
     main #form2 .container .row .col-lg-6  .bottom-content{
         width: 90%;
     }
@@ -2127,14 +2130,14 @@ main #company .container .row .col-lg-6 .img-item{
         font-size: 23px;
     }
     main #about2 .container{
-        height: 50vh;
+        height: 45vh;
     }
-    main #our-services .container {
-        height: 50vh;
+    main #our-services .container  {
+        height: 45vh;
     }
 
     main #blog .container {
-        height: 50vh;
+        height: 45vh;
     }
 
     main #best-services .container h2 {

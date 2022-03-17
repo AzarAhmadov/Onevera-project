@@ -1,3 +1,23 @@
+let mobilBar = document.querySelector('.mobil-bar')
+let openBtn = document.querySelector('.openBtn')
+let closeBtn = document.querySelector('.closeBtn');
+
+openBtn.addEventListener('click', () => {
+mobilBar.classList.add('active') 
+})
+
+closeBtn.addEventListener('click', () => {
+mobilBar.classList.remove('active') 
+})
+
+const nvL = document.querySelectorAll('.nv-l');
+
+for(let i = 0; i<nvL.length; i++){
+  nvL[i].addEventListener('click', function(){
+mobilBar.classList.remove('active') 
+  })
+}
+
 var swiper = new Swiper(".Myswip", {
     navigation: {
       nextEl: ".swiper-button-next",
@@ -36,15 +56,3 @@ var swiper = new Swiper(".Myswip", {
     },
     },
   });
-
-  let mobilBar = document.querySelector('.mobil-bar')
-  let openBtn = document.querySelector('.openBtn')
-  let closeBtn = document.querySelector('.closeBtn');
-
-openBtn.addEventListener('click', () => {
-  mobilBar.classList.add('active') 
-})
-
-closeBtn.addEventListener('click', () => {
-  mobilBar.classList.remove('active') 
-})
